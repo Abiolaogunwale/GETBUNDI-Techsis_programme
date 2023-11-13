@@ -1,0 +1,1 @@
+This is a project that entails building a website with Javascript. This was done upon completion of Javascript trainning on Getbundi platform majorly designed to help every woman in tech. Accompanied with this are the css and html files.
