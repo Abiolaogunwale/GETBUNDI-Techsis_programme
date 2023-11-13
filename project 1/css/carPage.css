@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&family=Roboto:wght@100;300;400;700&family=Shadows+Into+Light&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,700;1,300;1,400;1,700&display=swap'); */
+/* google fonts can be cpied and pasted on the head section as well.or copy thev style link and paste on style section of the html file */
+/* font face is for font local connection */
+@font-face {  
+    font-family: "booter - zero - zero";
+        /* font-family: sans-serif; */
+        src: url(./fonts/booter\ -\ zero\ zero.woff) format("woff"),
+             url(./fonts/booter\ -\ zero\ zero.woff) format("woff2");
+    /* src: url(./fonts/booter\-\zero\-\zero/BOOTERZZ.ttf) format("ttf"),
+         url(./fonts/booter\-\zero\-\zero/BOOTERZZ.ttf) format("ttf2"); */
+font-weight: normal;
+font-style: normal;
+}
+
+/* globals setup to make things work properly */
+*{
+    box-sizing: border-box;
+ }
+ body{
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    }
+ ul {
+    padding: 0;
+    margin: 0;
+ }
+ /* img {
+width: 100%;
+} */
+
+ .btn{
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+ }
+ /* end of globals */
+ /* advert */
+ .advert {
+    width: 100%;
+    height: 30px;
+    background-color: #daa520;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-weight: bolder; */
+ }
+ .advert h6 {
+    font-weight: bold;
+    font-size: 1.0rem;
+ }
+ /* end of advert */
+ /* navigation section */
+ nav {
+    height: 35px;
+    padding: 5px 10px;
+    background-color:rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+ }
+
+ nav > ul{
+    /* background-color: #daa520; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 5.5rem; */
+    list-style: none;
+ }
+  nav > ul >li{
+margin-right: 5.5rem;
+  }
+  nav > ul > li > a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 300; 
+    transition: all 0.3s ease-in-out;
+  }
+
+ nav > ul > li > a:hover{
+text-decoration: underline;
+text-decoration-color: #daa520;
+ }
+
+ .cart-container{
+   position: relative;
+ }
+
+ .cart-count{
+width: 15px;
+height: 15px;
+border-radius: 50%;
+background-color: #daa520;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 0.8rem;
+font-weight: bolder;
+position:absolute;
+top: -5px;
+right: -5px;
+}
+/* end of navigation */
+
+/* hero section */
+header{
+background-color:rgba(0, 0, 0, 0.6);
+width: 100%;
+min-height: 520px;
+background: url(../carIimages2/Lambo2.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+header > h1{
+color: #fff;
+/* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+font-family: "booter - zero zero";
+font-size: 15rem;
+text-align: center;
+margin: 0;
+}
+
+header > .btn-header-wrapper{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+/* header > .btn-header-wrapper > .btn-header {
+width: 300px;   
+padding: 10px 20px;
+border: none;
+outline: none;
+border-radius: 5px;
+background-color: rgba(255, 255, 255, 0.5);     
+} */
+
+header > .btn-header-wrapper > .btnHeaderContainer {
+width: 300px;   
+padding: 10px 20px;
+border-radius: 5px;
+background-color: rgba(255, 255, 255, 0.5);
+}
+
+header > .btn-header-wrapper > .btnHeaderContainer > button {  
+font-size: 1.3rem;
+padding: 10px 20px;
+font-weight: bold;
+background-color: transparent;
+outline: none;
+border: none;
+}
+
+header > .btn-header-wrapper > .btnHeaderContainer:hover + .btn-play {
+   background-color:red;
+   color: #fff;
+   /* padding: 10px 20px;
+   outline: none;
+   border: none; */
+}
+header > .btn-header-wrapper > .btn-play {
+   /* display: flex; */
+font-size: 2rem;
+padding: 10px 20px;
+margin-top: 20px;
+border-radius: 10px;
+outline: none;
+border: none;
+
+/* justify-content: center; */
+}
+header > .btn-header-wrapper > .btn-header > a{
+   font-size: 1.5rem;
+}
+/* end of hero section */
+/* end of header section */
+
+/* events */
+.title {
+   text-align: center;
+  font-family: "booter - zero zero";
+   font-size: 4rem;
+   margin-top: 0;
+}
+.tableWrapper {
+   padding: 10px;
+   overflow-x: auto;
+}
+
+.events table {
+   min-width: 650px;
+   max-width: 100%;
+   margin: 0 auto;
+   padding:0 10px;
+   border-collapse: collapse;
+}
+.events table td {
+   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+   padding: 10px;
+   margin-right:10px 20px;
+
+}
+.events table td .btn-events{
+   padding: 10px 20px;
+   background-color: black;
+   color: #fff;
+   border: none;
+   border-radius: 5px;
+}
+.events table td .btn-events:hover{
+   background-color: black;
+}
+/* Add item */
+.add-items {
+   padding: 10px 15px;
+   background-color: #daa520;
+   color: #fff;
+   font-weight: bolder;
+   font-size: 2rem;
+   border-radius: 10px;
+   outline: none;
+   border: none;
+   cursor: pointer;
+   text-align: center;
+}
+.add-items:hover {
+background-color: #daa520;
+}
+
+.add-items-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+/* enf of add item */
+/* add modal section */
+.add-modal {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: rgba(0, 0, 0, 0.5);
+/* if you want the modal to show, change the display to flex.  */
+display: none; 
+justify-content: center;
+align-items: center;
+
+} 
+ .add-modal.open {
+   display: flex; 
+}
+.add-modal > form {
+   width: 280px;
+   height: 380px;
+   padding: 10px;
+   background-color: #fff;
+   border-radius: 20px;
+   position: relative;
+
+}
+.add-modal > form > input,
+.add-modal > form > textarea {
+   width: 100%;
+   padding: 5px;
+   margin: 7px 0;
+}
+.add-modal > form > button {
+   width: 80px;
+   padding: 3px;
+   border: none;
+   outline: none;
+   background-color: #9b7618;
+   color: #fff;
+   font-weight: bolder;
+   border-radius: 5px;
+   cursor: pointer;
+}
+.fa-times{
+   position: absolute;
+   top: 8px;
+   right: 12px;
+   cursor: pointer;
+   font-size: 2rem;
+   color: #e87676;
+}
+/* end of add modal */
+
+/* alert */
+/* end of alert */
+.alert{
+   width: 250px;
+   height: 80px;
+   position: fixed;
+   right: 0;
+   top: 0;
+   cursor: pointer;
+   background-color: #e87676;
+   display: none;
+   z-index: 999;
+   justify-content: center;
+   align-content: center;
+   color: #fff;
+   font-weight: bolder;
+   padding: 0px 5px;
+}
+.alert.open {
+   display: flex;
+} 
+.alert.danger {
+   background-color: #e87676;
+}
+.alert.success {
+   background-color: green;
+}
+
+.cart {
+   margin: 50px, 0;
+   text-align: center;
+}
+.cart .tableWrapper {
+   padding: 10px;
+   overflow-x: auto;
+}
+.cart .tableWrapper table {
+   min-width: 650px;
+   max-width: 100%;
+   margin: 0 auto; 
+   font-size: 0.6rem;
+}
+
+.cart-items-title {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 15px;
+}
+
+.cart-items-title img {
+   width: 70px;
+   height: 70px;
+   margin-right: 10px;
+}
+.cart-items-qty{
+   width: 70px;
+   padding: 5px 10px;
+   margin-right: 10px;
+   margin-bottom: 5px;
+   background-color: #ccc;
+}
+
+.cart-items-remove{
+   font-weight: bold;
+   padding: 8px 15px;
+   border: none;
+   outline: none;
+   border-radius: 5px;
+   color: #fff;
+   background-color: #eb5757;
+}
+
+.cart-items-purchase{
+   padding: 10px 20px;
+   border: none;
+   outline: none;
+   border-radius: 5px;
+   color: #fff;
+   font-size: 1.5rem;
+   font-weight: bold;
+   background-color: blue;
+   cursor: pointer;
+}
+.cart-items-purchase:hover{
+   background-color: rgba(0, 0, 225, 0.7);
+}
+.collection {
+   width: 90%;
+   /* height: 300px; */
+   margin: 0 auto;
+ display: grid;
+   /* gap: 30px; */
+   gap: 40px;
+   /* grid-template-columns: 1fr 1fr 1fr; */
+   grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+   text-align: center;
+}
+
+.collection > .collection-items {
+border: 1px solid #ccc;
+border-radius: 10px;
+/* instead of 500px */
+height: 500px;
+}
+
+.collection 
+> .collection-items 
+> .collection-items-title{
+text-align: start;
+font-family: "booter - zero zero", sans-serif;
+padding: 0 20px;
+font-size: 2rem;
+}
+
+.collection > .collection-items > .collection-items-footer{
+   display: flex;
+   padding: 0 20px;
+   justify-content: space-between; 
+}
+
+.collection 
+> .collection-items
+> .collection-items-footer 
+> .collection-items-price{
+font-family: "ShadowsIntoLight-Regular", cursive;
+font-size: 1.5rem;
+}
+
+.collection 
+>.collection-items
+>.collection-items-footer 
+>.collection-items-btn{
+   font-size: 1rem;
+   padding: 10px 20px;
+   font-weight: bold;
+   background-color: rgba(0, 0, 0, 0.5);
+   color: #fff;
+   border: none;
+   /* outline: none; */
+   border-radius: 5px;
+}
+
+.collection-items-btn:hover {
+background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* about */
+.About {
+   padding: 20px;
+   width: 75%;
+   margin: 0 auto;
+}
+.About img {
+   float: left;
+height: 300px;
+width: 300px;
+margin: 15px;
+border-radius: 50%;
+background-color: #ccc;
+}
+
+.About p{
+   text-align: justify;
+}
+/* end of about */
+
+
+/* footer */
+footer {
+   display: flex;
+justify-content: space-around;
+align-items: right;
+padding: 20px;
+color: #fff;
+background-color: black;
+margin-top: 100px;
+border-bottom: 1px solid #fff;
+}
+
+footer > h2 {
+   color: #fff;
+   font-family: "booter - zero zero";
+   font-size: 5rem;
+   margin: 0;
+}
+
+footer > ul{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   list-style: none;
+}
+
+footer > ul > li {
+   margin-right: 20px;
+   /* margin-right: 7px; */
+}
+ footer > ul > li > a {
+   color: #fff;
+} 
+footer > ul > li > a > .fa-brands {
+  font-size: 1.5rem;
+  transition: all 0. 5s ease-in;
+}
+/* footer > ul > li > a > .fa-brands > .fa-instagram {
+color: red;
+}
+footer > ul > li > a > .fa-brands > .fa-twitter {
+   color: blue;
+   } */
+   
+footer > ul > li > a > .fa-brands:hover {
+   transform: translateY(-10px);
+ }
+/* end of footer */
+/* media query */
+@media (max-width:520px){
+   nav > ul > li {
+      margin-right: 1rem;
+   }
+
+   nav > ul > li > a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 14px;
+}
+header h1 {
+   font-size: 5rem;
+   margin-bottom: 1rem;
+}
+footer > h2 {
+   font-size: 2rem;
+}
+footer > ul >li{
+   margin-right: 7px;
+}
+footer > ul > li > a > .fa-brands{
+   color: #fff;
+   font-size: 1.2rem;
+}
+}

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" />  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawesome icon library -->
+    
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" 
+    />
+    
+    <!-- . is in the current working directry while .. means step out of this current directory -->
+    <link rel="stylesheet" href="./css/carPage.css">
+    <!-- <script defer src="../JS/carPage.js"></script> -->
+    <script defer src="/JS/collection.js"></script>
+
+
+
+    <title>collections CarAvalange</title>
+</head>
+<body>
+    <!-- what the user can see will be in the body -->
+<!-- General wrapper -->
+<div class="wrapper">
+    <!-- then advert goes inside this div -->
+    <div class="advert">
+        <!-- inside advert lets have h6-->
+        <h6>Advertisement!!!</h6>
+    </div>
+    <!-- end of advert -->
+    <!-- navigation -->
+    <nav class="nav nav_header">
+        <!-- inside nav we want to list items -->
+    <ul>
+        <li><a href="/">HOME</a></li>
+        <li><a href="./collections.html">COLLECTIONS</a></li>
+        <li><a href="./About.html">ABOUT</a></li>
+        
+        <li>
+            <a href="./cart.html">
+                <div class="cart-container">
+<!-- another div comes inn here as cart container -->
+    <!-- icon and cart count. check fa cart+ on net to get cart icon-->
+    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+    <div class="cart-count">0</div>
+    </div>
+    </a>
+</li>
+</ul>
+</nav>
+    <!-- end of navigation -->
+    <!-- hero section -->
+    <header>
+        <h1 class="header-title">Car Avalange</h1>
+        <!-- <h1>Car Avalange</h1> -->
+        <div class="add-items-container">
+            <button class="add-items">ADD ITEM/S</button>
+        </div>
+    </header>
+    <!-- collection section -->
+    <div class="container">
+        <h1 class="title">Collections</h1>
+    
+    <!-- end of collection -->
+    <!-- alert -->
+    <div class="alert">
+    <p id="alert-msg">Hello this is alert</p>
+</div>
+
+<!-- end of alert -->
+<!-- add item modal -->
+<div class="add-modal">
+<form>
+     <h2>Add item/s</h2>
+        <input type="text" placeholder="title" id="title">
+        <input type="number" placeholder="price" id="price">
+        <input type="text" placeholder="imageUrl" id="imageUrl">
+        <textarea name="desc" id="desc" cols="20" rows="5"></textarea>
+        <button id="submitItem">ADD</button>
+        <i class="fa fa-times" aria-hidden="true"></i>
+    </form>
+
+</div>
+<!-- end of modal -->
+</div>
+<!-- collection -->
+<!-- <div class="wrapper"> -->
+<div class="collection">
+<div class="collection-items">
+    <div style="width: 100%; height: 300px">
+        <img 
+        src="./carImages/car3-removebg-preview.png"
+        alt="items" 
+        width="320"
+        class="collection-img"
+    />
+    </div>
+    <h4 class="collection-items-title">End of discussion</h4>
+    <div class="collection-items-footer">
+        <span class="collection-items-price">₦21,000,000</span>
+        <button class="btn collection-items-btn">ADD TO CART</button>
+    </div>
+</div>
+   
+<div class="collection-items">
+ <div style="width: 100%; height: 300px">
+    <img 
+    src="./carImages/car4-removebg-preview (1).png" 
+    alt="items" 
+    width="320"
+    class="collection-img"
+    />
+</div>
+    <h4 class="collection-items-title">Ferrari</h4>
+    <div class="collection-items-footer">
+        <span class="collection-items-price">₦20,000,000</span>
+        <button class="btn collection-items-btn">ADD TO CART</button>
+    </div>
+</div>
+    
+<div class="collection-items">
+        <div style="width: 100%; height: 300px">
+    <img src="./carImages/car5-removebg-preview.png" 
+    alt="items" 
+    width="320"
+    class="collection-img"
+    />
+</div>
+    <h4 class="collection-items-title">Masda Sport Car 3</h4>
+    <div class="collection-items-footer">
+        <span class="collection-items-price">₦15,000,000</span>
+        <button class="btn collection-items-btn">ADD TO CART</button>
+</div>
+</div>
+    
+<div class="collection-items">
+    <div style="width: 100%; height: 300px">
+    <img src="./carImages/car6-removebg-preview.png" 
+    alt="items" 
+    width="320"
+    class="collection-img"
+    />
+</div>
+    <h4 class="collection-items-title">Sport BMW Car 4</h4>
+    <div class="collection-items-footer">
+        <span class="collection-items-price">₦12,000,000</span>
+        <button class="btn collection-items-btn">ADD TO CART</button>
+</div>
+</div>
+
+<div class="collection-items">
+    <div style="width: 100%; height: 300px">
+    <img src="./carImages/car6-removebg-preview.png" 
+    alt="items" 
+    width="320"
+    class="collection-img"
+    />
+</div>
+    <h4 class="collection-items-title">Sport BMW Car 4</h4>
+    <div class="collection-items-footer">
+        <span class="collection-items-price">₦12,000,000</span>
+        <button class="btn collection-items-btn">ADD TO CART</button>
+</div>
+</div>
+   
+<div class="collection-items">
+    <!-- <div style="width: 100%; height: 300px;"> -->
+    <img src="./carImages/car6-removebg-preview.png" 
+    alt="items" 
+    width="320"
+    class="collection-img"
+    />
+</div>
+    <h4 class="collection-items-title">Sport BMW Car</h4>
+    <div class="collection-items-footer">
+        <span class="collection-items-price">₦900,000,000</span>
+        <button class="btn collection-items-btn">ADD TO CART</button>
+    </div>
+</div>
+
+    <div class="collection-items">
+    <div style="width: 100%; height: 300px">
+    <img src="./carImages/Lambo2-removebg-preview.png" 
+    alt="items" 
+    width="320"
+    class="collection-img"
+    />
+</div>
+    <h4 class="collection-items-title">Lambogini</h4>
+    <div class="collection-items-footer">
+        <span class="collection-items-price">₦12,000,000</span>
+        <button class="btn collection-items-btn">ADD TO CART</button>
+    </div>
+</div>
+    
+<div class="collection-items">
+    <div style="width: 100%; height: 300px"> 
+    <img src="./carImages/Rolls-Royce-Spectre-Ildar-780x470-removebg-preview.png"
+    alt="items" 
+    width="320"
+    class="collection-img"
+    />
+</div>
+<h4 class="collection-items-title">Rolls-Royce</h4>
+    <div class="collection-items-footer">
+        <span class="collection-items-price">₦800,000,000</span>
+        <button class="btn collection-items-btn">ADD TO CART</button>
+    </div>
+</div>
+</div>
+
+
+<!-- end of collection -->
+<!-- footer-->
+<footer>
+    <h2>Car Avalange</h2>
+    <ul>
+        <li>
+            <a href="#">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+        <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+    </a>
+</li>
+<li>
+    <a href="#">
+    <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+</a>
+</li>
+    </ul>
+</footer>
+<!-- end of footer -->
+</div>
+    <!-- end of general wrapper -->
+ 
+<!-- <script src="../JS/collection.js"></script> -->
+</body>
+</html>

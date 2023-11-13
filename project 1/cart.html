@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" />  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawesome icon library -->
+    <!-- <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"
+    /> -->
+    <link 
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" 
+    />
+    <!-- . is in the current working directry while .. means step out of this current directory -->
+    <link rel="stylesheet" href="./css/carPage.css"/>
+    <script defer src="../JS/cart.js"></script> 
+    <!-- <script defer src="../JS/collection.js"></script> -->
+
+
+
+<title>About - Car Avalange</title>
+</head>
+<body>
+    <!-- what the user can see will be in the body -->
+<!-- General wrapper -->
+<div class="wrapper">
+    <!-- then advert goes inside this div -->
+    <div class="advert">
+        <!-- inside advert lets have h6-->
+        
+        <h6>Advertisement!!!</h6>
+    </div>
+    <!-- end of advert -->
+    <!-- navigation -->
+    <nav class="nav nav-header">
+        <!-- inside nav we want to list items -->
+    <ul>
+        <li><a href="/">HOME</a></li>
+        <li><a href="./collections.html">COLLECTIONS</a></li>
+        <li><a href="./About.html">ABOUT</a></li>
+        <li>
+            <a href="./cart.html">
+                <div class="cart-container">
+    <!-- icon and cart count. check fa cart+ on net to get cart icon-->
+    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+    <div class="cart-count">0</div>
+</div>
+            </a>
+        </li>
+    </ul>
+    </nav>
+    <!-- end of navigation -->
+    <!-- hero section -->
+    <header class="hero">
+        <h1 class="header-title">CarAvalange</h1>
+        </header>
+            
+<!-- end of event -->
+<!-- main section -->
+<div class="container">
+    <h1 class="title">Your Cart</h1> 
+<!-- Alert -->
+<div class="alert">
+    <p id="alert-msg">Hello this is Car Avalange</p>
+</div>
+<!-- end of alert -->
+
+<!-- cart section -->
+<div class="cart">
+    <h2 class="title cart-items-header">CART</h2>
+<div class="tableWrapper">
+    <table>
+        <thead>
+            <th>ITEM/S</th>
+            <th>PRICE</th>
+            <th>QUANTITY</th>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+            
+<!-- <tr class="cart-items">
+<td class="cart-items-title">
+                    <img src="./carImages/car4-removebg-preview (1).png" alt="cart-item"/>
+                <span class="cart-title">Ferrari 2023 model</span>
+                </td>
+                <td class="cart-items-price">₦20,000,000</td>
+            <td class="cart-items-qty-container">
+                <input type="number" class="btn cart-items-qty"/>
+                <button class="btn cart-items-remove">REMOVE</button>
+            </td>
+            </tr>
+            <tr class="cart-items">
+                <td class="cart-items-title">
+                   <img src="./carImages/car5-removebg-preview.png" alt="cart-items"/>
+                <span class="cart-title">Masda 2023 model</span>
+                </td>
+                <td class="cart-items-price"> ₦12,000,000</td>
+            <td class="cart-items-qty-container">
+                <input type="number" class="btn cart-items-qty"/>
+                <button class="btn cart-items-remove">REMOVE</button>
+            </td>
+        </tr>
+        <tr class="cart-items">
+            <td class="cart-items-title">
+                    <img src="./carImages/car3-removebg-preview.png" alt="cart-items"/>
+                <span class="cart-title">End of Discussion 2023 model</span>
+                </td>
+                <td class="cart-items-price"> ₦200,000,000</td>
+            <td class="cart-items-qty-container">
+                <input type="number" class="btn cart-items-qty"/>
+                <button class="btn cart-items-remove">REMOVE</button>
+            </td>
+        </tr>
+        <tr class="cart-items">
+            <td class="cart-items-title">
+        
+                    <img src="./carImages/car9-removebg-preview.png" alt="cart-items"/>
+                <span class="cart-title">Beetle Open Roof 2023 model</span>
+                </td>
+                <td class="cart-items-price"> ₦200,000,000</td>
+            <td class="cart-items-qty-container">
+                <input type="number" class="btn cart-items-qty"/>
+                <button class="btn cart-items-remove">REMOVE</button>
+            </td>
+            </tr>
+        </tbody>
+    </table>
+</div> -->
+<h4 class="cart-total"></h4>
+<button class="cart-items-purchase">Purchase</button>
+</div>
+</div>
+
+<!-- end of cart -->
+<!-- end of main section -->
+
+<!-- footer-->
+<footer>
+    <h2>Car Avalange</h2>
+    
+    <ul>
+        <li>
+            <a href="#">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+        <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+    </a>
+</li>
+<li>
+    <a href="#">
+    <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+</a>
+</li>
+    </ul>
+</footer>
+<!-- end of footer -->
+</div>
+    <!-- end of general wrapper -->
+ 
+
+ 
+</body>
+</html>
